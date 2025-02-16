@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/Multimedia/bground-pattern.jpg);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 10px;
+}
+
+/* BOTON WHATSAPP FLOTANTE */
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+/* LOGO NAVBAR */
+.logo-img {
+  height: 120px; /* Aumenta el tamaño del logo */
+  width: 130px;
+  object-fit: contain; /* Asegura que el logo no se deforme */
+}
+
+/* CONTENEDOR */
+
+.container {
+  max-width: 1000px;
+  background: white;
+  padding: 0px;
+  border-radius: 20px;
+}
+
+.container {
+  box-shadow: 0 0 20px 5px black;
+}
+
+/* RADIO NAVBAR */
+.navbar {
+  border-radius: 10px;
+}
+
+/* PORTADA */
+
+.img-header {
+  width: 100%;
+}
+
+.portada {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  overflow: hidden;
+}
+
+.img-header {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que se adapte al contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Centrado del contenido */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Agrega un poco de contraste al texto */
+}
+
+/* Estilo del texto y logo */
+.bienvenidos {
+  font-family: Montserrat;
+  font-size: 3rem; /* Tamaño inicial del texto */
+  margin: 0;
+  position: relative;
+  top: 200px;
+}
+
+.logo {
+  width: 600px; /* Tamaño inicial del logo */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .bienvenidos {
+      font-size: 3rem;
+  }
+
+  .logo {
+      width: 700px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bienvenidos {
+      font-size: 1.5rem;
+  }
+
+  .logo {
+      width: 150px;
+  }
+}
+
+/* QUIENES SOMOS */
+
+.tipo-qs {
+  font-family: Lustria;
+  padding-top: 20px;
+  font-size: 50px;
+  color: rgb(46, 63, 11);
+  text-align: center; }
+
+.text-qs {
+  color: black;
+  font-family: Montserrat;
+  padding: 1rem;
+  text-align: center;
+}
+
+.img-qs {
+  width: 100%;
+  padding: 15px;
+}
+
+/* SECCION CABAÑAS */
+
+.section-cabañas {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-color: white; }
+
+.h2-cabañas {
+  font-family: Lustria;
+  color: rgb(46, 63, 11);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.card-cabañas {
+  border-radius: 10px;
+  border: 10px black;
+  background: #4CAF50;
+  color: white;
+}
+
+.grid-cabañas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  z-index: 20;
+  padding: 10px;
+}
+.card-cabañas {
+  background: #4CAF50;
+  color: white;
+  border-radius: 15px;
+}
+
+.img-cabañas {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-card {
+  padding: 10px;
+}
+
+/* SISTEMA DE RESERVAS */
+
+.h2-reservas {
+  font-family: Lustria;
+  color: rgb(46, 63, 11);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.text-reservas {
+  color: black;
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* PREGUNTAS FRECUENTES */
+
+.h2-preg {
+  font-family: Lustria;
+  color: rgb(46, 63, 11);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.section-preguntas {
+  padding: 2rem;
+}
+
+/* MAPA UBICACION */
+
+.mapa-ubi {
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 63, 11);
+}
+
+.mapa-ubi p {
+  text-align: center;
+}
+
+.mapa {
+  height: 100%;
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+.h2-ubi {
+  font-family: Lustria;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* FOTO FINAL */
+
+.img-footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-footer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(46, 63, 11);
+  padding-top: 50px; }
+footer .contenedor3 {
+  padding-bottom: 5%;
+  color: white;
+}
+footer .titulo1 {
+  font-family: Lustria;  
+  text-align: center;
+  background-color: none; }
+footer .copy {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10px; }
+footer .titulo-seccion, footer .copy {
+  color: rgb(255, 255, 255); }
+footer i {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 0 20px; }
+footer i:hover {
+  transform: scale(1.5);
+  transition: all 1s; }
+footer .redes-sociales {
+  display: flex;
+  justify-content: center; }
